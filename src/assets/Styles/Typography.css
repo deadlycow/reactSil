@@ -1,0 +1,35 @@
+:root {
+  --D1: 80px;
+  --D2: 72px;
+  --D3: 64px;
+  --D4: 56px;
+  --D5: 48px;
+  --D6: 42px;
+
+  --H1: 40px;
+  --H2: 32px;
+  --H3: 28px;
+  --H4: 24px;
+  --H5: 20px;
+  --H6: 16px;
+
+  --Lead: 24px;
+  --XL: 20px;
+  --L: 18px;
+  --M: 16px;
+  --S: 14px;
+  --XS: 12px;
+
+  --line-h-16: 160%;
+  --line-h-14: 140%;
+  --line-h-13: 130%;
+
+  --font-w-regular: 400;
+  --font-w-medium: 500;
+  --font-w-semi: 600;
+  --font-w-bold: 700;
+  --font-w-extrabold: 800;
+
+  --tablet: 550px;
+  --laptop: 1080px;
+}

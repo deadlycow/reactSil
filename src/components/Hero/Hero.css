@@ -1,0 +1,139 @@
+.hero {
+  text-align: center;
+  padding-block: 2rem;
+  display: grid;
+  gap: 2.375rem;
+
+  #break {
+    display: block;
+  }
+
+  h1 {
+    color: var(--color-font-h1);
+    font-size: var(--H2);
+    font-weight: var(--font-w-extrabold);
+  }
+
+  p {
+    font-size: var(--L);
+    line-height: var(--line-h-16);
+    color: var(--color-font-p);
+  }
+}
+
+.more-container {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--color-link-more);
+    text-decoration: none;
+    font-size: var(--S);
+  }
+
+  &:focus,
+  :active {
+    text-decoration: underline;
+  }
+}
+
+.store-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.two-phones {
+  display: none;
+}
+
+@media (width > 670px) {
+
+  .hero {
+    grid-template-columns: 270px 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 0;
+    text-align: left;
+
+    h1 {
+      font-size: var(--D6);
+      grid-column: 1 / -1;
+      grid-row: 1;
+      text-align: center;
+      padding-top: 3.375rem;
+    }
+
+    p {
+      grid-row: 2;
+      padding-top: 5.5rem;
+    }
+
+  }
+
+  .store-container {
+    flex-direction: row;
+    padding-top: 1.5rem;
+  }
+
+  .more-container {
+    grid-row: 4;
+    justify-content: left;
+    padding-top: 2rem;
+  }
+
+  .two-phones {
+    display: block;
+    grid-row: 2 / 6;
+    grid-column: 2 / 3;
+    padding-top: 1rem;
+  }
+}
+
+@media (width > 1080px) {
+
+  .hero {
+    grid-template-columns: 500px 1fr;
+    column-gap: 9rem;
+    row-gap: 0;
+
+    h1 {
+      font-size: var(--D4);
+      grid-column: 1 / 2;
+      grid-row: 1;
+      text-align: left;
+      place-self: end;
+      padding-top: 3.375rem;
+    }
+
+    p {
+      grid-row: 2;
+      padding-top: 0;
+      place-self: center;
+    }
+
+  }
+
+  .store-container {
+    flex-direction: row;
+    padding-top: 1.5rem;
+    grid-row: 3;
+  }
+
+  .more-container {
+    grid-row: 4;
+    justify-content: left;
+    padding-top: 2rem;
+  }
+
+  .two-phones {
+    display: block;
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+    padding-top: 8.125rem;
+  }
+
+}

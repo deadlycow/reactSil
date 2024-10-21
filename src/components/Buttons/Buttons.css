@@ -1,0 +1,54 @@
+.btn {
+  background-color: var(--bg-color-transparent);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--S);
+  font-weight: var(--font-w-semi);
+  color: var(--color-white);
+}
+
+.btn-store {
+  height: 3.25em;
+  padding: .5em 1em;
+  background-color: var(--bg-color-btn-store);
+}
+
+.btn-round {
+  width: 44px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--bg-color-btn-round);
+
+  .btn-img-size {
+    width: 22px;
+    aspect-ratio: 1;
+  }
+}
+
+.btn-signin {
+  width: 140px;
+  height: 36px;
+  background-color: var(--bg-color-btn-signin);
+
+  div {
+    height: 16px;
+    aspect-ratio: 1;
+    margin-right: .5em;
+  }
+
+  @media (width < 1080px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+
+  @media (width > 1080px) {
+    display: none;
+  }
+}
