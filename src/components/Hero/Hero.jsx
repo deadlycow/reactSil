@@ -1,8 +1,11 @@
 import './Hero.css';
 import { StoreButton, RoundMoreBtn } from '../Buttons/Buttons';
 import twoPhones from '../../assets/images/two-phones.svg';
+import { useTheme } from '../Theme/ThemeContext';
 
 function Hero() {
+
+  const { theme } = useTheme();
 
   return (
     <div className='hero'>
@@ -13,13 +16,13 @@ function Hero() {
       <img className='two-phones' src={twoPhones} alt="two-phones" />
 
       <div className='store-container'>
-        <StoreButton src={'apple'} altText={'Apple Store'} />
-        <StoreButton src={'google'} altText={'google-img'} />
+        <StoreButton brand={'apple'} altText={'Apple Store'} theme={theme} />
+        <StoreButton brand={'google'} altText={'google-img'} theme={theme} />
       </div>
 
       <div className='more-container'>
         <a href='#'>
-          <RoundMoreBtn />
+          <RoundMoreBtn theme={theme} />
           Discover more</a>
       </div>
 

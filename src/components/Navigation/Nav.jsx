@@ -4,8 +4,8 @@ import { useTheme } from '../Theme/ThemeContext';
 
 import Theme from '../Theme/Theme';
 import { SignInBtn, Hamburger } from '../Buttons/Buttons';
-import icon from '../../assets/icons/signin-icon.svg';
 
+import icon from '../../assets/icons/signin-icon.svg';
 import logoLight from '../../assets/images/logo-light.svg';
 import logoDark from '../../assets/images/logo-dark.svg';
 import burgerLight from '../../assets/icons/hamburger-light-icon.svg';

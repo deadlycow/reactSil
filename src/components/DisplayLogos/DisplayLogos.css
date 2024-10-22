@@ -1,0 +1,32 @@
+.brand-container {
+  border: 1px var(--color-border-logos) solid;
+  border-radius: 8px;
+  padding: 2rem 1.25rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-logos-hover);
+    box-shadow: var(--bg-shadow-s);
+  }
+}
+
+.brand-flex {
+  display: none;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 5rem;
+
+  @media (width > 670px) {
+    display: flex;
+
+    & .brand-container:nth-last-child(-n +2) {
+      display: none;
+    }
+  }
+
+  @media (width > 1080px) {
+    & .brand-container:nth-last-child(-n +2) {
+      display: block;
+    }
+  }
+}

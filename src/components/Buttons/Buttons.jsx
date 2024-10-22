@@ -1,6 +1,5 @@
 import React from "react";
 import './Buttons.css';
-import { useTheme } from "../Theme/ThemeContext";
 
 import appleLight from '../../assets/images/appstore-light.svg';
 import appleDark from '../../assets/images/appstore-dark.svg';
@@ -25,20 +24,10 @@ const images = {
 };
 
 
-function StoreButton({ src, altText }) {
-  let image = '';
-  const { theme } = useTheme();
-
-  if (src === 'google') {
-    image = images.google[theme];
-  }
-  else if (src === 'apple') {
-    image = images.apple[theme];
-  }
-
+function StoreButton({ brand, altText, theme }) {
   return (
     <button className="btn btn-store">
-      <img src={image} alt={altText} />
+      <img src={images[brand][theme]} alt={altText} />
     </button>
   );
 }
@@ -60,8 +49,7 @@ function Hamburger({ src, alt, onClick }) {
   );
 };
 
-function RoundMoreBtn() {
-  const { theme } = useTheme();
+function RoundMoreBtn({ theme }) {
   return (
     <button className="btn btn-round">
       <img className="btn-img-size" src={images.chevron[theme]} alt="chevron-icon" />
