@@ -42,6 +42,7 @@
   --color-font-h1: var(--color-gray-900);
   --color-font-p: var(--color-gray-700);
   --color-border-logos: var(--color-gray-300);
+  --bg-color-features-icon: var(--color-gray-100);
 }
 
 :root[theme='dark'] {
@@ -57,6 +58,7 @@
   --color-font-p: var(--color-white-70);
   --color-text: var(--color-white-70);
   --bg-color-btn-round: var(--color-white-5);
+  --bg-color-features-icon: var(--color-white-5);
 
   --gradient-color-1: #6366F11A;
   --gradient-color-2: #DA46EF0D;
