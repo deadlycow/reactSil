@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero.jsx'
 import './App.css'
 import DisplayLogos from './components/DisplayLogos/DisplayLogos.jsx';
 import AppFeatures from './components/AppFeatures/AppFeatures.jsx';
+import HowItWorks from './components/HowItWorks/HowItWorks.jsx';
 
 function App() {
 
@@ -19,11 +20,15 @@ function App() {
       <div className='wrapper'>
         <DisplayLogos />
         <AppFeatures />
-        {/* How Does It Work */}
-        {/* FAQ */}
-        {/* Newsletter */}
-        {/* Footer */}
       </div>
+      <div className='bg-cover-solid'>
+        <div className="wrapper">
+          <HowItWorks />
+        </div>
+      </div>
+      {/* FAQ */}
+      {/* Newsletter */}
+      {/* Footer */}
     </>
   )
 }

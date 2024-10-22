@@ -1,0 +1,41 @@
+.section-howitworks {
+  display: grid;
+  text-align: center;
+  padding-block: 3.75rem;
+
+  h3 {
+    font-size: var(--H3);
+    font-weight: var(--font-w-extrabold);
+    color: var(--color-font-h1);
+    padding-bottom: 2rem;
+  }
+
+  h5 {
+    font-size: var(--H5);
+    font-weight: var(--font-w-extrabold);
+    color: var(--color-font-h1);
+    padding-top: 2rem;
+  }
+
+  p {
+    font-size: var(--M);
+    line-height: var(--line-h-16);
+    color: var(--color-font-p);
+    padding-top: .5rem;
+  }
+
+}
+
+.howitworks-image-container {
+  position: relative;
+  width: 270px;
+  height: 546px;
+  place-self: center;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -39,3 +39,7 @@ img {
 .bg-cover {
   background: var(--bg-radial);
 }
+
+.bg-cover-solid {
+  background-color: var(--bg-color-secondary);
+}
