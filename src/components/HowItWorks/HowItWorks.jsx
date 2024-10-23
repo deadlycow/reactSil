@@ -1,15 +1,19 @@
+import React from 'react';
+import Carousel from './Carousel/Carousel';
+
 import './HowItWorks.css';
-import containerInlay from '../../assets/images/changePhone/container-inlay.svg';
-import inlay1 from '../../assets/images/changePhone/inlay1.svg';
+
+import '../../../node_modules/slick-carousel/slick/slick.css';
+import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 
 function HowItWorks() {
+
   return (
     <section className='section-howitworks'>
       <h3>How Does It Work?</h3>
-      <div className='howitworks-image-container'>
-        <img src={containerInlay} alt="" />
-        <img src={inlay1} alt="" />
-      </div>
+      
+        <Carousel />
+      
       <h5>Transfer to people from <br /> your contact list</h5>
       <p>
         Proin volutpat mollis egestas. Nam luctus facilisis

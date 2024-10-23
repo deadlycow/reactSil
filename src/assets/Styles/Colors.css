@@ -44,6 +44,9 @@
   --color-font-p: var(--color-gray-700);
   --color-border-logos: var(--color-gray-300);
   --bg-color-features-icon: var(--color-gray-100);
+
+  /* React changed values with !Important*/
+  --dots: #000;
 }
 
 :root[theme='dark'] {
@@ -67,4 +70,6 @@
   --gradient-color-3: #13102203;
   --bg-radial: radial-gradient(circle at 50% 100%, var(--gradient-color-1) 0%, var(--gradient-color-2) 50%, var(--gradient-color-3) 100%);
 
+  /* React changed values with !Important*/
+  --dots: #FFF;
 }

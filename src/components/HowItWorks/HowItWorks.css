@@ -1,5 +1,6 @@
 .section-howitworks {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-block: 3.75rem;
 
@@ -23,19 +24,35 @@
     color: var(--color-font-p);
     padding-top: .5rem;
   }
-
 }
 
-.howitworks-image-container {
-  position: relative;
-  width: 270px;
-  height: 546px;
-  place-self: center;
+@media (width > 768px) {
+  .section-howitworks {
+    h3 {
+      font-size: var(--H2);
+      padding-bottom: 3rem;
+    }
 
-  img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    h5 {
+      font-size: (var(--H4));
+      padding-top: 2.5rem;
+    }
+
+    p {
+      max-width: 450px;
+      place-self: center;
+    }
+  }
+}
+
+@media (width > 1280px) {
+  .section-howitworks {
+    h3 {
+      font-size: var(--H1);
+    }
+
+    p {
+      max-width: 600px;
+    }
   }
 }
