@@ -54,7 +54,7 @@
   display: none;
 }
 
-@media (width > 670px) {
+@media (width > 768px) {
   .section-appfeatures {
 
     padding-block: 0 6.25rem;
@@ -69,7 +69,7 @@
   }
 }
 
-@media (width > 1080px) {
+@media (width > 1280px) {
   .section-appfeatures {
     gap: 0;
     padding-block: 0 7rem;

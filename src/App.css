@@ -23,15 +23,15 @@ img {
 }
 
 .wrapper {
-  padding: .75rem .75rem 0 .75rem;
+  padding-inline: .75rem;
   overflow-x: hidden;
+  margin-inline: auto;
 
-  @media (width > 550px) {
-    max-width: 705px;
-    margin-inline: auto;
+  @media (width > 768px) {
+    max-width: 710px;
   }
 
-  @media (width > 1080px) {
+  @media (width > 1280px) {
     max-width: 1300px;
   }
 }

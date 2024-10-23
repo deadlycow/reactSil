@@ -50,7 +50,7 @@
   display: none;
 }
 
-@media (width > 670px) {
+@media (width > 768px) {
 
   .hero {
     grid-template-columns: 270px 1fr;
@@ -93,10 +93,10 @@
   }
 }
 
-@media (width > 1080px) {
+@media (width > 1280px) {
 
   .hero {
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 500px 1fr 1fr;
     column-gap: 9rem;
     row-gap: 0;
 
@@ -132,7 +132,7 @@
   .two-phones {
     display: block;
     grid-row: 1 / 5;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     padding-top: 8.125rem;
   }
 
