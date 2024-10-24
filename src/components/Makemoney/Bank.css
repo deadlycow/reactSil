@@ -1,0 +1,28 @@
+h2 {
+  font-size: var(--H2);
+  line-height: var(--line-h-13);
+
+}
+
+.bank-flex {
+  display: flex;
+  gap: 2.5rem;
+  padding-block: 2.5rem;
+
+  p {
+    padding-top: 1rem;
+    color: var(--color-font-p);
+    font-size: var(--M);
+    font-weight: var(--font-w-regular);
+    line-height: var(--line-h-16);
+  }
+}
+
+.bg-icon {
+  display: flex;
+  width: 60px;
+  padding: 1rem;
+  border-radius: var(--border-r-8);
+  aspect-ratio: 1;
+  background-color: var(--bg-color-features-icon);
+}

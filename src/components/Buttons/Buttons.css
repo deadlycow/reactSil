@@ -52,3 +52,25 @@
     display: none;
   }
 }
+
+.btn-more {
+  padding: .75rem 1.75rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  font-size: var(--S);
+  font-weight: var(--font-w-semi);
+  line-height: var(--line-h-16);
+  font-family: "Manrope";
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  
+  img {
+    width: 20px;
+    aspect-ratio: 1;
+  }
+  &:hover {
+    background-color: var(--color-btn-hover);
+    transition: all .3s ease;
+  }
+}

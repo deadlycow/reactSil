@@ -20,6 +20,7 @@
   --color-sucsess: #22C55E;
   --color-warning: #FFBA08;
   --color-info: #4C82F7;
+  --color-hover: #6365f1c3;
 
   --bg-color-transparent: transparent;
 
@@ -37,6 +38,7 @@
   --gradient-color-3: #F1F4FD12;
   --bg-radial: radial-gradient(circle at 50% 100%, var(--gradient-color-1) 0%, var(--gradient-color-2) 42%, var(--gradient-color-3) 83%);
 
+  --color-btn-hover: var(--color-hover);
   --color-text: var(--color-gray-700);
   --color-link: var(--color-gray-800);
   --color-link-more: var(--color-gray-700);

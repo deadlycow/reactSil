@@ -1,0 +1,21 @@
+.makemoney-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 7rem;
+  padding-inline: 3rem;
+  row-gap: 10rem;
+}
+
+.pad {
+  place-self: center start;
+}
+
+.pad-2 {
+  padding-left: 3rem;
+}
+
+@media (width < 1280px) {
+  .makemoney-grid {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+h2 {
+  color: var(--color-font-h1);
+  line-height: var(--lineh-13);
+  font-weight: var(--font-w-extrabold);
+}
+
+.makemoney-ul {
+  padding-block: 2rem 2.5rem;
+  display: grid;
+  gap: .75rem;
+  
+  li {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: var(--color-text);
+  }
+}
+
+.list-icon {
+  width: 20px;
+  aspect-ratio: 1;
+}
