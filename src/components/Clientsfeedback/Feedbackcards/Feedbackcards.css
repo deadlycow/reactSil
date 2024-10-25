@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: var(--border-r-8);
+  background-color: var(--bg-card);
+  box-shadow: var(--bg-shadow-s);
+  display: grid;
+  gap: 1.5rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -1.7rem;
+  left: 1.5rem;
+  width: 44px;
+  aspect-ratio: 1;
+  background-color: var(--color-primary);
+  padding: .75rem;
+  border-radius: var(--border-r-8);
+  display: flex;
+}
+
+.rating {
+  display: flex;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.user-text {
+  color: var(--color-font-p);
+  font-size: var(--L);
+  line-height: var(--line-h-16);
+  font-weight: var(--font-w-regular);
+}
+
+.user-information {
+  display: flex;
+  gap: 1rem;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.user-details {
+  h6 {
+    font-size: var(--M);
+    line-height: var(--line-h-16);
+    font-weight: var(--font-w-bold);
+    color: var(--color-font-h1);
+  }
+
+  .proffesion {
+    font-size: var(--S);
+    line-height: var(--line-h-16);
+    font-weight: var(--font-w-regular);
+    color: var(--color-font-p);
+  }
+}

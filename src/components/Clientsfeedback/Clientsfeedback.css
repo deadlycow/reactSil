@@ -1,0 +1,17 @@
+.clients-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  padding-block: 6.5625rem;
+}
+
+h2 {
+  font-size: var(--H1);
+  line-height: var(--line-h-13);
+}
+
+@media (width < 1280px) {
+ .clients-container {
+  display: none;
+ }
+}

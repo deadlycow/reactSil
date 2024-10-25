@@ -7,6 +7,7 @@ import DisplayLogos from './components/DisplayLogos/DisplayLogos.jsx';
 import AppFeatures from './components/AppFeatures/AppFeatures.jsx';
 import HowItWorks from './components/HowItWorks/HowItWorks.jsx';
 import Makemoney from './components/Makemoney/Makemoney.jsx';
+import Clientsfeedback from './components/Clientsfeedback/Clientsfeedback.jsx';
 
 function App() {
 
@@ -30,7 +31,11 @@ function App() {
       <div className='wrapper'>
         <Makemoney />
       </div>
-      {/* clients */}
+      <div className='bg-cover-solid'>
+        <div className='wrapper'>
+          <Clientsfeedback />
+        </div>
+      </div>
       {/* FAQ */}
       {/* Newsletter */}
       {/* Footer */}
