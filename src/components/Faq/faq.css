@@ -1,0 +1,35 @@
+.faq-container {
+  display: grid;
+  text-align: center;
+  padding-block: 2.625rem;
+}
+.faq-header {
+  h2 {
+    font-size: var(--Lead);
+    line-height: var(--line-h-16);
+    font-weight: var(--font-w-extrabold);
+    color: var(--color-font-h1);
+    padding-bottom:1.125rem;
+  }
+  p {
+    font-size: var(--L);
+    line-height: var(--line-h-16);
+    color: var(--color-font-p);
+    padding-bottom: 3.375rem;
+  }
+}
+.list-faq {
+  padding-bottom: 3.375rem;
+}
+
+.contact-cards {
+  display: flex;
+  gap: 1.5rem;
+  padding-block: 2rem;
+}
+
+@media (width < 768px) {
+  .contact-cards {
+    display: none;
+  }
+}

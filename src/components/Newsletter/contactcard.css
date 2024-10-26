@@ -1,0 +1,15 @@
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  row-gap: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--border-r-8);
+  border: 1px solid var(--color-gray-300);
+  text-align: left;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}

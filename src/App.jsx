@@ -9,6 +9,8 @@ import HowItWorks from './components/HowItWorks/HowItWorks.jsx';
 import Makemoney from './components/Makemoney/Makemoney.jsx';
 import Clientsfeedback from './components/Clientsfeedback/Clientsfeedback.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import Faq from './components/Faq/Faq.jsx';
+import Newsletter from './components/Newsletter/Newsletter.jsx';
 
 function App() {
 
@@ -37,9 +39,9 @@ function App() {
           <Clientsfeedback />
         </div>
       </div>
-      {/* FAQ */}
-      {/* Newsletter */}
       <div className="wrapper">
+        <Faq />
+        <Newsletter />
         <Footer />
       </div>
     </>

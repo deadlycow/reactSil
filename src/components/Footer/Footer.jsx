@@ -3,11 +3,11 @@ import './footer.css';
 
 function Footer() {
   return (
-    <div className='footer'>
+    <footer>
       <p>
       © 2024 Silicon. All rights reserved. Credit MadrasThemes
       </p>
-    </div>
+    </footer>
   )
 }
 

@@ -8,7 +8,7 @@
   justify-content: center;
   font-size: var(--S);
   font-weight: var(--font-w-semi);
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }
 
 .btn-store {
@@ -72,5 +72,36 @@
   &:hover {
     background-color: var(--color-btn-hover);
     transition: all .3s ease;
+  }
+}
+
+.btn-contact-us {
+  font-size: var(--S);
+  font-weight: var(--font-w-semi);
+  line-height: var(--line-h-16);
+  font-family: "Manrope";
+  gap: .5rem;
+  justify-content: start;
+}
+
+.btn-green {
+  color: var(--color-sucsess);
+}
+.btn-blue {
+  color: var(--color-primary);
+}
+
+.btn-contact-us-now {
+  place-self: center;
+  font-size: var(--S);
+  font-weight: var(--font-w-semi);
+  line-height: var(--line-h-16);
+  font-family: "Manrope";
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 1rem 1.75rem;
+
+  @media (width > 768px) {
+    display: none;
   }
 }

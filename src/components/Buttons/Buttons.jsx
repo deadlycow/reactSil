@@ -8,6 +8,9 @@ import googleDark from '../../assets/images/googlestore-dark.svg';
 import chevronLight from '../../assets/icons/chevron-dark.svg';
 import chevronDark from '../../assets/icons/chevron-light.svg';
 
+import blueArrow from '../../assets/icons/arrow-right-blue.svg';
+import greenArrow from '../../assets/icons/arrow-right-green.svg';
+
 const images = {
   apple: {
     light: appleLight,
@@ -21,6 +24,11 @@ const images = {
     light: chevronLight,
     dark: chevronDark
   }
+};
+
+const arrows = {
+  blue: blueArrow,
+  green: greenArrow,
 };
 
 
@@ -57,4 +65,21 @@ function RoundMoreBtn({ theme }) {
   )
 }
 
-export { SignInBtn, StoreButton, Hamburger, RoundMoreBtn };
+function ContactUs({ color }) {
+  return (
+    <button className={`btn btn-contact-us btn-${color}`} >
+      Contact us
+      <img src={arrows[color]} />
+    </button>
+  )
+};
+
+function ContactUsNow() {
+return (
+<button className="btn btn-contact-us-now">
+  Contact us now
+</button>
+)
+};
+
+export { SignInBtn, StoreButton, Hamburger, RoundMoreBtn, ContactUs, ContactUsNow };
