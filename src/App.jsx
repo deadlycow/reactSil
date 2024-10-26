@@ -8,6 +8,7 @@ import AppFeatures from './components/AppFeatures/AppFeatures.jsx';
 import HowItWorks from './components/HowItWorks/HowItWorks.jsx';
 import Makemoney from './components/Makemoney/Makemoney.jsx';
 import Clientsfeedback from './components/Clientsfeedback/Clientsfeedback.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
 
@@ -38,7 +39,9 @@ function App() {
       </div>
       {/* FAQ */}
       {/* Newsletter */}
-      {/* Footer */}
+      <div className="wrapper">
+        <Footer />
+      </div>
     </>
   )
 }

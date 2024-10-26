@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  p {
+    padding-block: 3.5rem;
+    font-size: var(--S);
+    font-weight: var(--font-w-regular);
+    line-height: var(--line-h-16);
+    color: var(--color-font-p);
+  }
+}
