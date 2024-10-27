@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import './faqlist.css';
+import { useTheme } from '../../Theme/ThemeContext';
+import chevronLight from '../../../assets/icons/chevron-light.svg';
+import chevronDark from '../../../assets/icons/chevron-dark.svg';
+
+const chevrons = {
+  light: chevronDark,
+  dark: chevronLight,
+};
 
 function FaqList() {
+  const { theme } = useTheme();
   const [faq, setFaq] = useState([]);
 
   useEffect(() => {
@@ -28,7 +37,7 @@ function FaqList() {
 
   const [open, setOpen] = useState(null);
 
-  const toggleAnswer = (id) =>{
+  const toggleAnswer = (id) => {
     setOpen(open === id ? null : id);
   }
 
@@ -36,14 +45,18 @@ function FaqList() {
 
     <>
       {faq.map(item => (
-        <div key={item.id}>
+        <div className={`bg-question ${open === item.id ? 'active' : ''}`} key={item.id}>
           <button className='question' onClick={() => toggleAnswer(item.id)}>
             <h3>{item.title}</h3>
-            <span>X</span>
+           
+          
+            <span className={`${open === item.id ? 'rotate' : ''}`} >
+              <img src={`${open === item.id ? chevrons.light : chevrons[theme]}`}/>
+            </span>
           </button>
-          {open === item.id && <div className='answer'>
+          <div className={`answer ${open === item.id ? 'open' : ''}`} >
             <p>{item.content}</p>
-          </div>}
+          </div>
         </div>
       ))}
     </>

@@ -1,3 +1,7 @@
+#br {
+  display: none;
+}
+
 .faq-container {
   display: grid;
   text-align: center;
@@ -20,16 +24,37 @@
 }
 .list-faq {
   padding-bottom: 3.375rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .contact-cards {
   display: flex;
   gap: 1.5rem;
-  padding-block: 2rem;
+  padding-block: 2.5rem 2rem;
 }
 
 @media (width < 768px) {
   .contact-cards {
     display: none;
+  }
+}
+
+@media (width > 768px) {
+  #br {
+    display: block;
+  }
+  .faq-header {
+    h2 {
+      font-size: var(--H2);
+      line-height: var(--line-h-13);
+      padding-bottom:2rem;
+    }
+    p {
+      padding-bottom: 2.9375rem;
+    }
+  }
+  .list-faq {
+    padding-bottom: 0;
   }
 }

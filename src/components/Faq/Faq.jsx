@@ -11,7 +11,7 @@ function Faq() {
   return (
     <div className='faq-container'>
       <div className="faq-header">
-        <h2>Any Questions? Check out the FAQs</h2>
+        <h2>Any Questions?<br id='br'/> Check out the FAQs</h2>
         <p>Still have unanswered quwstions and need to get in touch?</p>
       </div>
       <div className='list-faq'>

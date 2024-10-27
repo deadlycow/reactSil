@@ -33,6 +33,7 @@
   --bg-color-list: var(--color-white);
 
   --bg-shadow-s: 0 4.4px 12px -1px #1310220f, 0 2px 6.4px -1px #13102208;
+  --bg-shadow-m: 0 4.4px 20px -1px #1310220d, 0 4px 9px -1px #13102208;
 
   --gradient-color-1: #6366F11A;
   --gradient-color-2: #DA46EF0D;
@@ -47,6 +48,7 @@
   --color-font-h6: var(--color-gray-600);
   --color-font-p: var(--color-gray-700);
   --color-border-logos: var(--color-gray-300);
+  --color-border-faq: var(--color-white);
   --bg-color-features-icon: var(--color-gray-100);
   --bg-card: var(--color-white);
 
@@ -61,6 +63,7 @@
 
   --color-logos-hover: var(--color-white-4);
   --color-border-logos: var(--color-white-15);
+  --color-border-faq: var(--color-white-15);
   --color-link: var(--color-white);
   --color-link-more: var(--color-white);
   --color-font-h1: var(--color-white);

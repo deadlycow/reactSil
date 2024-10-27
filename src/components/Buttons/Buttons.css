@@ -101,7 +101,7 @@
   background-color: var(--color-primary);
   padding: 1rem 1.75rem;
 
-  @media (width > 768px) {
+  @media (width > 767px) {
     display: none;
   }
 }
