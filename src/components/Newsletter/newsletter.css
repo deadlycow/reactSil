@@ -1,0 +1,41 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-secondary);
+  gap: 2rem;
+  padding: 2.5rem 1rem;
+
+  .newsletter-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 78px;
+    height: 78px;
+  }
+
+  h4 {
+    color: var(--color-font-p);
+    font-size: var(--H4);
+  }
+
+}
+
+form {
+  display: flex;
+  input {
+    width: 100%;
+    position: relative;
+    font-size: var(--M);
+  }
+  img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+  }
+  /* button {
+
+  } */
+}

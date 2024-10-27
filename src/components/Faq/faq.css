@@ -7,14 +7,16 @@
   text-align: center;
   padding-block: 2.625rem;
 }
+
 .faq-header {
   h2 {
     font-size: var(--Lead);
     line-height: var(--line-h-16);
     font-weight: var(--font-w-extrabold);
     color: var(--color-font-h1);
-    padding-bottom:1.125rem;
+    padding-bottom: 1.125rem;
   }
+
   p {
     font-size: var(--L);
     line-height: var(--line-h-16);
@@ -22,6 +24,7 @@
     padding-bottom: 3.375rem;
   }
 }
+
 .list-faq {
   padding-bottom: 3.375rem;
   display: grid;
@@ -44,17 +47,40 @@
   #br {
     display: block;
   }
+
   .faq-header {
     h2 {
       font-size: var(--H2);
       line-height: var(--line-h-13);
-      padding-bottom:2rem;
+      padding-bottom: 2rem;
     }
+
     p {
       padding-bottom: 2.9375rem;
     }
   }
+
   .list-faq {
     padding-bottom: 0;
+  }
+}
+
+@media (width > 1280px) {
+  .faq-container {
+    grid-template-columns: 420px 1fr;
+    column-gap: 8.375rem;
+    text-align: left;
+    padding-block: 7rem;
+  }
+
+  .faq-header {
+    p {
+      padding-bottom: 2.9375rem;
+    }
+  }
+
+  .list-faq {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
   }
 }

@@ -47,6 +47,7 @@
   --color-font-h1: var(--color-gray-900);
   --color-font-h6: var(--color-gray-600);
   --color-font-p: var(--color-gray-700);
+  --color-btn-text: var(--color-white);
   --color-border-logos: var(--color-gray-300);
   --color-border-faq: var(--color-white);
   --bg-color-features-icon: var(--color-gray-100);

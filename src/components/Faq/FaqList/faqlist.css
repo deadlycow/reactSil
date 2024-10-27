@@ -8,6 +8,7 @@
   width: 100%;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   h3 {
     font-size: var(--M);
@@ -31,6 +32,10 @@
       width: 20px;
       height: 20px;
     }
+  }
+  &:hover{
+    background-color: #0000000d;
+    border-radius: var(--border-r-8);
   }
 }
 

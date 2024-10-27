@@ -8,7 +8,7 @@
   justify-content: center;
   font-size: var(--S);
   font-weight: var(--font-w-semi);
-  /* color: var(--color-white); */
+  font-family: 'Manrope';
 }
 
 .btn-store {
@@ -32,6 +32,7 @@
 .btn-signin {
   width: 140px;
   height: 36px;
+  color: var(--color-btn-text);
   background-color: var(--bg-color-btn-signin);
 
   div {
@@ -60,6 +61,7 @@
   font-size: var(--S);
   font-weight: var(--font-w-semi);
   line-height: var(--line-h-16);
+  color: var(--color-btn-text);
   font-family: "Manrope";
   display: flex;
   gap: .5rem;
