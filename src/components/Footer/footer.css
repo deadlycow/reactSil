@@ -1,10 +1,31 @@
 footer {
   text-align: center;
+
   p {
     padding-block: 3.5rem;
     font-size: var(--S);
     font-weight: var(--font-w-regular);
     line-height: var(--line-h-16);
     color: var(--color-font-p);
+  }
+}
+
+@media (width > 768px) {
+  #br-footer {
+    display: none;
+  }
+
+  footer {
+    p {
+      padding-block: 1.25rem;
+    }
+  }
+}
+
+@media (width > 1280px) {
+  footer {
+    p {
+      padding-block: 3.375rem;
+    }
   }
 }

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <p>
-      © 2024 Silicon. All rights reserved. Credit MadrasThemes
+      © 2024 Silicon. All rights reserved.<br id='br-footer'/> Credit MadrasThemes
       </p>
     </footer>
   )

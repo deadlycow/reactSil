@@ -87,7 +87,7 @@
 }
 
 .btn-green {
-  color: var(--color-sucsess);
+  color: var(--color-success);
 }
 .btn-blue {
   color: var(--color-primary);
@@ -106,4 +106,16 @@
   @media (width > 767px) {
     display: none;
   }
+}
+
+.btn-sub {
+  background-color: var(--color-primary);
+  font-size: var(--M);
+  font-weight: var(--font-w-semi);
+  line-height: var(--line-h-16);
+  border-radius: 0 4px 4px 0;
+  font-family: "Manrope";
+  padding-inline: 1rem;
+  color: var(--color-white);
+
 }

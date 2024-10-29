@@ -1,0 +1,101 @@
+.input-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-r-8);
+  border: 1px solid transparent;
+}
+
+input {
+  width: 100%;
+  font-size: var(--M);
+  padding: 1rem .75rem 1rem 2.75rem;
+  border-top-left-radius: var(--border-r-8);
+  border-bottom-left-radius: var(--border-r-8);
+  border: none;
+  color: var(--color-font-p);
+  background: var(--bg-color-input);
+
+
+  &::placeholder {
+    color: var(--color-gray-500);
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+}
+
+label {
+  margin-top: 4px;
+  border-radius: var(--border-r-4);
+  font-size: var(--XS);
+  padding: .2rem;
+  display: none;
+}
+
+label.success {
+  color: var(--color-success);
+  background-color: var(--color-success-12);
+  content: '';
+  border: none;
+  display: inline-block;
+}
+
+label.error {
+  color: var(--color-error);
+  background-color: var(--color-error-12);
+  content: '';
+  border: none;
+  display: inline-block;
+}
+
+.input-container::before {
+  content: '';
+  background-image: url(../../../assets/icons/mail-icon.svg);
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.input-container::after {
+  content: '';
+  background-size: contain;
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+.input-container.success::after {
+  background-image: url(../../../assets/icons/green-check-icon.svg);
+  display: block;
+}
+
+.input-container.error::after {
+  background-image: url(../../../assets/icons/x-icon.svg);
+  display: block;
+}
+
+.error {
+  border: 1px solid var(--color-error);
+
+  button {
+    background-color: var(--color-error);
+  }
+}
+
+.success {
+  border: 1px solid var(--color-success);
+
+  button {
+    background-color: var(--color-success);
+  }
+}

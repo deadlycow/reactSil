@@ -12,16 +12,19 @@
   --color-gradient: #DA46EF;
   --color-gradient2: #f1f4fd;
   --color-white: #fff;
+  --color-white-2: #ffffff05;
   --color-white-4: #FFFFFF0A;
   --color-white-5: #FFFFFF0d;
   --color-white-15: #FFFFFF26;
   --color-white-50: #ffffff80;
   --color-white-70: #FFFFFFB3;
   --color-error: #EF4444;
-  --color-sucsess: #22C55E;
+  --color-error-12: #EF44441f;
+  --color-success: #22C55E;
+  --color-success-12: #22c55e1f;
   --color-warning: #FFBA08;
   --color-info: #4C82F7;
-  --color-hover: #6365f1c3;
+  --color-hover: #6365f1c3;  
 
   --bg-color-transparent: transparent;
 
@@ -31,6 +34,7 @@
   --bg-color-secondary: var(--color-gray-100);
   --bg-color-btn-round: var(--color-white);
   --bg-color-list: var(--color-white);
+  --bg-color-input: var(--color-white);
 
   --bg-shadow-s: 0 4.4px 12px -1px #1310220f, 0 2px 6.4px -1px #13102208;
   --bg-shadow-m: 0 4.4px 20px -1px #1310220d, 0 4px 9px -1px #13102208;
@@ -50,6 +54,7 @@
   --color-btn-text: var(--color-white);
   --color-border-logos: var(--color-gray-300);
   --color-border-faq: var(--color-white);
+  --color-border-input: var(--color-gray-400);
   --bg-color-features-icon: var(--color-gray-100);
   --bg-card: var(--color-white);
 
@@ -75,6 +80,7 @@
   --bg-color-features-icon: var(--color-white-5);
   --bg-color-secondary: var(--color-white-4);
   --bg-card: var(--color-white-4);
+  --bg-color-input: var(--color-white-2);
 
   --gradient-color-1: #6366F11A;
   --gradient-color-2: #DA46EF0D;
