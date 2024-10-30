@@ -27,8 +27,7 @@ img {
 }
 
 .wrapper {
-  padding-inline: .75rem;
-  overflow-x: hidden;
+  padding-inline: 1.75rem;
   margin-inline: auto;
 
   @media (width > 768px) {

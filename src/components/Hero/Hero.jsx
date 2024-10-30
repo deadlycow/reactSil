@@ -8,7 +8,7 @@ function Hero() {
   const { theme } = useTheme();
 
   return (
-    <div className='hero'>
+    <div className='hero wrapper'>
       <h1>Manage All Your <br id='break'/>Money in One App</h1>
       <p>We offer you a new generation of the mobile banking.
         Save, spend & manage money in your pocket.</p>

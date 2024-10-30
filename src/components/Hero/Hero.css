@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  padding-block: 2rem;
+  padding-block: 6rem 2rem;
   display: grid;
   gap: 2.375rem;
 
@@ -56,7 +56,7 @@
     grid-template-columns: 270px 1fr;
     column-gap: 2rem;
     row-gap: 1rem;
-    padding: 0;
+    padding-block: 4rem 0;
     text-align: left;
 
     h1 {

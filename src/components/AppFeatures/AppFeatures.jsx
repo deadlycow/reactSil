@@ -11,7 +11,7 @@ import icon_f6 from '../../assets/icons/happy-icon.svg';
 
 function AppFeatures() {
   return (
-    <section className='section-appfeatures'>
+    <section className='section-appfeatures wrapper'>
       <h2>App Features</h2>
       <p>Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Proin volutpat mollis egestas.

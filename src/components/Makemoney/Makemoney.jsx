@@ -11,7 +11,7 @@ import { Chart, List } from './ImageContainers/ImagesContainers.jsx'
 function Makemoney() {
   return (
     <>
-      <div className='makemoney-grid'>
+      <div className='makemoney-grid wrapper'>
         <div className="pad">
           <Transfer />
         </div>

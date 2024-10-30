@@ -5,7 +5,7 @@ import SubForm from './Subform/SubForm';
 
 function Newsletter() {
   return (
-    <div className='newsletter'>
+    <div className='newsletter wrapper'>
       <div className='newsletter-header'>
         <img src={notificationIcon} />
         <h4 className='full-text'>Subscribe to our newsletter to stay <br /> informed about latest updates</h4>

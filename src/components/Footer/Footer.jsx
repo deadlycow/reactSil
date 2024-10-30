@@ -3,7 +3,7 @@ import './footer.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer className='wrapper'>
       <p>
       © 2024 Silicon. All rights reserved.<br id='br-footer'/> Credit MadrasThemes
       </p>

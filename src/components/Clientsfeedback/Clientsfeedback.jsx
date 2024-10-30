@@ -25,7 +25,7 @@ function Clientsfeedback() {
   }, []);
 
   return (
-    <div className='clients-container'>
+    <div className='clients-container wrapper'>
       <h2>Clients are <br/>Loving Our App</h2>
       <Feedbackcards users={users}/>
     </div>

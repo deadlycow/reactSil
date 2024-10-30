@@ -13,7 +13,7 @@ function DisplayLogos() {
 
 
   return (
-    <div className='brand-flex'>
+    <div className='brand-flex wrapper'>
       {
         test.map((item, index) => (
           <div key={index} className='brand-container'>

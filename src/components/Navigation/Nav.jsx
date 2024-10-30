@@ -10,6 +10,7 @@ import logoLight from '../../assets/images/logo-light.svg';
 import logoDark from '../../assets/images/logo-dark.svg';
 import burgerLight from '../../assets/icons/hamburger-light-icon.svg';
 import burgerDark from '../../assets/icons/hamburger-dark-icon.svg';
+import { Link } from 'react-router-dom';
 
 const navImages = {
   logo: {
@@ -32,17 +33,16 @@ function Nav() {
   };
 
   return (
-    <nav>
+    <div className='main-nav wrapper'>
       <div className='flex-center gap-3'>
-        <div className="img-container-logo">
-          <img src={navImages.logo[theme]} alt='Logo' />
+        <img className='img-logo' src={navImages.logo[theme]} alt='Logo' />
+        <div className={`link-list ${menuOpen ? 'open' : ''}`}>
+          <div className="link-items">
+            <Link className='link' to='/'>Features</Link>
+            <Link className='link' to='Contact'>Contact</Link>
+          </div>
         </div>
-        <ul className={`list ${menuOpen ? 'open' : ''}`}>
-          <li><a className='nav-link' href='#'>Features</a></li>
-          <li><a className='nav-link' href='#'>Contact</a></li>
-        </ul>
       </div>
-
       <div className='container'>
         <div className='flex-center gap-1'>
           <p>Darkmode</p>
@@ -51,7 +51,7 @@ function Nav() {
         <Hamburger src={navImages.burger[theme]} alt={'hamburger-icon'} onClick={toggleMenu} />
         <SignInBtn src={icon} alt={'icon'} />
       </div>
-    </nav>
+    </div>
   );
 };
 

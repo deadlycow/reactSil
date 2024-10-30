@@ -19,7 +19,6 @@ function SubForm() {
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
-      console.log('inte valid email');
       setError('Please provide a valid input.');
       setSuccess(false);
       return;
@@ -37,7 +36,10 @@ function SubForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Error..')
+        throw new Error(response.status);
+      }
+      else {
+        console.log(response.status);
       }
       setEmail('');
 

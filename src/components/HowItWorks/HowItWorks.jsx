@@ -9,7 +9,7 @@ import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 function HowItWorks() {
 
   return (
-    <section className='section-howitworks'>
+    <section className='section-howitworks wrapper'>
       <h3>How Does It Work?</h3>
       
         <Carousel />
