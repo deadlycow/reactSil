@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import ContactInfo from '../components/Contact/ContactInfo';
 function Contact() {
   return (
-
-    <p>hej</p>
-
+    <>
+      <ContactInfo />
+    </>
   );
 };
 

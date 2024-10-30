@@ -10,6 +10,7 @@ import chevronDark from '../../assets/icons/chevron-light.svg';
 
 import blueArrow from '../../assets/icons/arrow-right-blue.svg';
 import greenArrow from '../../assets/icons/arrow-right-green.svg';
+import { NavLink } from "react-router-dom";
 
 const images = {
   apple: {
@@ -67,19 +68,19 @@ function RoundMoreBtn({ theme }) {
 
 function ContactUs({ color }) {
   return (
-    <button className={`btn btn-contact-us btn-${color}`} >
+    <NavLink to='/Contact' className={`btn btn-contact-us btn-${color}`}>
       Contact us
       <img src={arrows[color]} />
-    </button>
+    </NavLink>
   )
 };
 
 function ContactUsNow() {
-return (
-<button className="btn btn-contact-us-now">
-  Contact us now
-</button>
-)
+  return (
+    <NavLink to='/Contact' className="btn btn-contact-us-now">
+      Contact us now
+    </NavLink>
+  )
 };
 
 export { SignInBtn, StoreButton, Hamburger, RoundMoreBtn, ContactUs, ContactUsNow };

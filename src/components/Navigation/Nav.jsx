@@ -1,8 +1,9 @@
 import './Nav.css';
 import React, { useState } from 'react';
-import { useTheme } from '../Theme/ThemeContext';
+import { NavLink } from 'react-router-dom';
 
 import Theme from '../Theme/Theme';
+import { useTheme } from '../Theme/ThemeContext';
 import { SignInBtn, Hamburger } from '../Buttons/Buttons';
 
 import icon from '../../assets/icons/signin-icon.svg';
@@ -10,7 +11,6 @@ import logoLight from '../../assets/images/logo-light.svg';
 import logoDark from '../../assets/images/logo-dark.svg';
 import burgerLight from '../../assets/icons/hamburger-light-icon.svg';
 import burgerDark from '../../assets/icons/hamburger-dark-icon.svg';
-import { Link } from 'react-router-dom';
 
 const navImages = {
   logo: {
@@ -38,8 +38,8 @@ function Nav() {
         <img className='img-logo' src={navImages.logo[theme]} alt='Logo' />
         <div className={`link-list ${menuOpen ? 'open' : ''}`}>
           <div className="link-items">
-            <Link className='link' to='/'>Features</Link>
-            <Link className='link' to='Contact'>Contact</Link>
+            <NavLink className='link' to='/'>Features</NavLink>
+            <NavLink className='link' to='/Contact'>Contact</NavLink>
           </div>
         </div>
       </div>

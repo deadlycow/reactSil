@@ -1,7 +1,5 @@
 import React from 'react';
-import Nav from '../components/Navigation/Nav.jsx'
 import Hero from '../components/Hero/Hero.jsx'
-
 import DisplayLogos from '../components/DisplayLogos/DisplayLogos.jsx';
 import AppFeatures from '../components/AppFeatures/AppFeatures.jsx';
 import HowItWorks from '../components/HowItWorks/HowItWorks.jsx';
@@ -29,7 +27,7 @@ function Home() {
       </div>
       <Faq />
       <Newsletter />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
