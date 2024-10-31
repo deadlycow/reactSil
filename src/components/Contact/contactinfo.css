@@ -1,0 +1,83 @@
+.nav-padding {
+  padding-top: 7.25rem;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  padding-block: 2rem 7.9rem;
+
+  h1 {
+    font-size: var(--H1);
+    line-height: var(--line-h-13);
+    font-weight: var(--font-w-extrabold);
+    color: var(--color-font-h1);
+    padding-bottom: 2.5rem;
+  }
+}
+
+.mail-container,
+.career-container {
+  display: flex;
+  gap: 1.5rem;
+
+  .info {
+    display: grid;
+    gap: .75rem;
+
+    h4 {
+      font-size: var(--H4);
+      font-weight: var(--font-w-extrabold);
+      line-height: var(--line-h-14);
+      color: var(--color-font-h1);
+    }
+    p {
+      font-size: var(--M);
+      line-height: var(--line-h-16);
+      color: var(--color-font-p);
+      max-width: 19.125rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: var(--M);
+      font-weight: var(--font-w-semi);
+      line-height: var(--line-h-16);
+      color: var(--color-primary);
+    }
+
+    a::after {
+      content: '';
+      background-image: url(../../assets/icons/arrow-right-blue.svg);
+      background-size: contain;
+      width: 24px;
+      aspect-ratio: 1;
+      display: inline-block;
+      margin-left: .5rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.icon-round {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: var(--bg-color-list);
+  border-radius: 50%;
+}
+
+.form-pop {
+  /* width: 636px;
+  height: 718px; */
+  background-color: orange;
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;
+  
+}

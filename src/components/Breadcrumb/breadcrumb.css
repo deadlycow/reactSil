@@ -1,0 +1,42 @@
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  color: var(--color-font-h1);
+  font-size: var(--S);
+}
+
+li {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: var(--color-font-p);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+li:last-child {
+  color: var(--color-primary);
+}
+
+li::before {
+  content: '';
+  background-image: url(../../assets/icons/chevrons-right-icon.svg);
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: .75rem;
+}
+
+li:first-child::before {
+  content: '';
+  background-image: url(../../assets/icons/home-icon.svg);
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}

@@ -45,6 +45,10 @@
   opacity: 1 !important;
 }
 
+.slick-dots li::before{
+  display: none;
+}
+
 .slick-slide img {
   opacity: .75 !important;
   transition: opacity .3s ease;

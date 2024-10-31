@@ -8,12 +8,16 @@ h2 {
   padding-block: 2rem 2.5rem;
   display: grid;
   gap: .75rem;
-  
-  li {
+
+  .makemoney-li {
     display: flex;
     gap: .5rem;
     align-items: center;
     color: var(--color-text);
+  }
+
+  .makemoney-li::before {
+    display: none;
   }
 }
 

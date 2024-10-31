@@ -5,7 +5,6 @@ import AppFeatures from '../components/AppFeatures/AppFeatures.jsx';
 import HowItWorks from '../components/HowItWorks/HowItWorks.jsx';
 import Makemoney from '../components/Makemoney/Makemoney.jsx';
 import Clientsfeedback from '../components/Clientsfeedback/Clientsfeedback.jsx';
-import Footer from '../components/Footer/Footer.jsx';
 import Faq from '../components/Faq/Faq.jsx';
 import Newsletter from '../components/Newsletter/Newsletter.jsx';
 
@@ -27,7 +26,6 @@ function Home() {
       </div>
       <Faq />
       <Newsletter />
-      {/* <Footer /> */}
     </>
   );
 };
