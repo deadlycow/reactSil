@@ -4,23 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 import Theme from '../Theme/Theme';
 import { useTheme } from '../Theme/ThemeContext';
-import { SignInBtn, Hamburger } from '../Buttons/Buttons';
+import { SignInBtn } from '../Buttons/Buttons';
+import Hamburger from '../Buttons/Hamburger';
 
 import icon from '../../assets/icons/signin-icon.svg';
 import logoLight from '../../assets/images/logo-light.svg';
 import logoDark from '../../assets/images/logo-dark.svg';
-import burgerLight from '../../assets/icons/hamburger-light-icon.svg';
-import burgerDark from '../../assets/icons/hamburger-dark-icon.svg';
 
 const navImages = {
-  logo: {
-    light: logoLight,
-    dark: logoDark
-  },
-  burger: {
-    light: burgerLight,
-    dark: burgerDark
-  }
+    'light': logoLight,
+    'dark': logoDark,
 };
 
 function Nav() {
@@ -35,7 +28,7 @@ function Nav() {
   return (
     <div className='main-nav wrapper'>
       <div className='flex-center gap-3'>
-        <img className='img-logo' src={navImages.logo[theme]} alt='Logo' />
+        <img className='img-logo' src={navImages[theme]} alt='Logo' />
         <div className={`link-list ${menuOpen ? 'open' : ''}`}>
           <div className="link-items">
             <NavLink className='link' to='/'>Features</NavLink>
@@ -48,7 +41,7 @@ function Nav() {
           <p>Darkmode</p>
           <Theme />
         </div>
-        <Hamburger src={navImages.burger[theme]} alt={'hamburger-icon'} onClick={toggleMenu} />
+        <Hamburger onClick={toggleMenu} isOpen={menuOpen} />
         <SignInBtn src={icon} alt={'icon'} />
       </div>
     </div>

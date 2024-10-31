@@ -24,10 +24,11 @@
   content: '';
   height: 20px;
   width: 20px;
-  left: 2px;
-  bottom: 2px;
+  left: 1px;
+  bottom: 1px;
   background-color: var(--color-white);
   border-radius: 50%;
+  border: 1px solid transparent;
   transition: .4s;
 }
 

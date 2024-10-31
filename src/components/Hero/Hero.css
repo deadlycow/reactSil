@@ -105,7 +105,7 @@
       grid-column: 1 / 2;
       grid-row: 1;
       text-align: left;
-      place-self: end;
+      place-self: end start;
       padding-top: 3.375rem;
     }
 

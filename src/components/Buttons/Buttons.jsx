@@ -50,14 +50,6 @@ function SignInBtn({ src, altText }) {
   );
 };
 
-function Hamburger({ src, alt, onClick }) {
-  return (
-    <button className="hamburger btn" onClick={onClick}>
-      <img src={src} alt={alt} />
-    </button>
-  );
-};
-
 function RoundMoreBtn({ theme }) {
   return (
     <button className="btn btn-round">
@@ -83,4 +75,4 @@ function ContactUsNow() {
   )
 };
 
-export { SignInBtn, StoreButton, Hamburger, RoundMoreBtn, ContactUs, ContactUsNow };
+export { SignInBtn, StoreButton, RoundMoreBtn, ContactUs, ContactUsNow };

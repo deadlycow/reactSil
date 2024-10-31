@@ -16,6 +16,7 @@
   --color-white-4: #FFFFFF0A;
   --color-white-5: #FFFFFF0d;
   --color-white-15: #FFFFFF26;
+  --color-white-18: #ffffff2e;
   --color-white-50: #ffffff80;
   --color-white-70: #FFFFFFB3;
   --color-error: #EF4444;
@@ -38,6 +39,9 @@
 
   --bg-shadow-s: 0 4.4px 12px -1px #1310220f, 0 2px 6.4px -1px #13102208;
   --bg-shadow-m: 0 4.4px 20px -1px #1310220d, 0 4px 9px -1px #13102208;
+  --bg-shadow-l: 0 4.8px 24.4px -6px #1310231a, 0 4px 13px -2px #1310220f;
+
+  --btn-shadow: 0 8px 18px -8px var(--color-hover);
 
   --gradient-color-1: #6366F11A;
   --gradient-color-2: #DA46EF0D;
@@ -70,6 +74,7 @@
   --color-logos-hover: var(--color-white-4);
   --color-border-logos: var(--color-white-15);
   --color-border-faq: var(--color-white-15);
+  --color-border-input: var(--color-white-18);
   --color-link: var(--color-white);
   --color-link-more: var(--color-white);
   --color-font-h1: var(--color-white);
@@ -86,6 +91,8 @@
   --gradient-color-2: #DA46EF0D;
   --gradient-color-3: #13102203;
   --bg-radial: radial-gradient(circle at 50% 100%, var(--gradient-color-1) 0%, var(--gradient-color-2) 50%, var(--gradient-color-3) 100%);
+
+  --bg-shadow-l: 0 4.8px 24.4px -6px #ffffff1a, 0 4px 13px -2px #ffffff0f;
 
   /* React changed values with !Important*/
   --dots: #FFF;

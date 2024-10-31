@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   border-radius: var(--border-r-8);
-  border: 1px solid transparent;
+  /* border: 1px solid var(--color-border-input); */
 }
 
 input {
@@ -12,7 +12,8 @@ input {
   padding: 1rem .75rem 1rem 2.75rem;
   border-top-left-radius: var(--border-r-8);
   border-bottom-left-radius: var(--border-r-8);
-  border: none;
+  border: 1px solid var(--color-border-input);
+  border-right: none;
   color: var(--color-font-p);
   background: var(--bg-color-input);
 
@@ -89,6 +90,7 @@ label.error {
 
   button {
     background-color: var(--color-error);
+    border-color: var(--color-error);
   }
 }
 
@@ -97,5 +99,6 @@ label.error {
 
   button {
     background-color: var(--color-success);
+    border-color: var(--color-success);
   }
 }

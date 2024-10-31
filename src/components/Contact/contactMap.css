@@ -1,0 +1,63 @@
+.map-container {
+  padding-block: 12.5rem 30.375rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.center-info-header {
+  font-size: var(--H4);
+  font-weight: var(--font-w-extrabold);
+  line-height: var(--line-h-14);
+  color: var(--color-font-h1);
+  padding-bottom: 1.5rem;
+}
+
+.center-unorder-list {
+  flex-direction: column;
+  gap: .75rem;
+}
+
+li.time-icon::before,
+li.phone-icon::before,
+li.map-icon::before {
+  content: '';
+  background-size: contain;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+li.time-icon::before {
+  background-image: url(../../assets/icons/time-five-icon.svg);
+  place-self: start;
+}
+
+li.phone-icon::before {
+  background-image: url(../../assets/icons/phone-call-icon.svg);
+}
+
+li.map-icon::before {
+  background-image: url(../../assets/icons/map-icon.svg);
+}
+
+.no-before::before {
+  display: none;
+  margin-left: 23px;
+}
+
+.ul-column {
+  flex-direction: column;
+  list-style: circle;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-font-p);
+}
+
+.time-header {
+  font-weight: var(--font-w-bold);
+  color: var(--color-font-h1);
+}

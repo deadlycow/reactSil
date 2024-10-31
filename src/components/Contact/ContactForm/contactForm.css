@@ -1,0 +1,35 @@
+.contact-form-container {
+  display: grid;
+  gap: 1rem;
+
+  .contact-form-header{
+    font-size: var(--H2);
+    color: var(--color-font-h1);
+    padding-bottom: 1rem;
+  }
+
+  button {
+    margin-top: 6.625rem;
+  }
+}
+
+.contact-form-input {
+  border-radius: var(--border-r-8);
+  padding: .8125rem 1rem;
+  font-size: var(--M);
+  line-height: var(--line-h-16);
+  border: 1px solid var(--color-border-input);
+  
+}
+
+select {
+  width: 100%;
+}
+
+.contact-form-label {
+  display: block;
+  font-size: var(--M);
+  font-weight: var(--font-w-semi);
+  line-height: var(--line-h-16);
+  color: var(--color-font-h1);
+}

@@ -74,10 +74,19 @@
 }
 
 .form-pop {
-  /* width: 636px;
-  height: 718px; */
-  background-color: orange;
   grid-column: 2 / 3;
   grid-row: 1 / 5;
+  position: relative;
   
+}
+
+.pop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4.5rem;
+  border-radius: var(--border-r-8);
+  background-color: var(--bg-color-main);
+  box-shadow: var(--bg-shadow-l);
+  width: 636px;
 }
