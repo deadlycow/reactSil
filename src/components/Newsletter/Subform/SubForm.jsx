@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './subform.css';
 
-import mailIcon from '../../../assets/icons/mail-icon.svg';
-
 function SubForm() {
   const [email, setEmail] = useState('');
   const [success, setSuccess] = useState(false);

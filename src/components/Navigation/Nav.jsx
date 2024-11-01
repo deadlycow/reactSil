@@ -7,7 +7,6 @@ import { useTheme } from '../Theme/ThemeContext';
 import { SignInBtn } from '../Buttons/Buttons';
 import Hamburger from '../Buttons/Hamburger';
 
-import icon from '../../assets/icons/signin-icon.svg';
 import logoLight from '../../assets/images/logo-light.svg';
 import logoDark from '../../assets/images/logo-dark.svg';
 
@@ -42,7 +41,7 @@ function Nav() {
           <Theme />
         </div>
         <Hamburger onClick={toggleMenu} isOpen={menuOpen} />
-        <SignInBtn src={icon} alt={'icon'} />
+        <SignInBtn />
       </div>
     </div>
   );

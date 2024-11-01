@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import './Buttons.css';
 
 import appleLight from '../../assets/images/appstore-light.svg';
@@ -10,7 +11,9 @@ import chevronDark from '../../assets/icons/chevron-light.svg';
 
 import blueArrow from '../../assets/icons/arrow-right-blue.svg';
 import greenArrow from '../../assets/icons/arrow-right-green.svg';
-import { NavLink, Link } from "react-router-dom";
+
+import icon from '../../assets/icons/signin-icon.svg';
+
 
 const images = {
   apple: {
@@ -24,7 +27,7 @@ const images = {
   chevron: {
     light: chevronDark,
     dark: chevronLight,
-  }
+  },
 };
 
 const arrows = {
@@ -41,10 +44,10 @@ function StoreButton({ brand, altText, theme }) {
   );
 }
 
-function SignInBtn({ src, altText }) {
+function SignInBtn() {
   return (
     <button className="btn btn-signin">
-      <div><img src={src} alt={altText} /></div>
+      <div><img src={icon} alt='sign in icon' /></div>
       <span> Sign in / up </span>
     </button>
   );

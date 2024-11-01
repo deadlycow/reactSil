@@ -34,8 +34,8 @@ function Socials() {
   return (
     <>
       {icons.map((item, index) => (
-        <a href={item.address} target='_blank'>
-          <div key={index} className='icon-box'>
+        <a key={index} href={item.address} target='_blank'>
+          <div className='icon-box'>
             <img src={item[theme]} />
           </div>
         </a>
