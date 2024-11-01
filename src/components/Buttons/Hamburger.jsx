@@ -10,12 +10,12 @@ import closeDark from '../../assets/icons/close-square-dark.svg';
 
 const icons = {
   ham: {
-    'light': burgerLight,
-    'dark': burgerDark,
+    'light': burgerDark,
+    'dark': burgerLight,
   },
   cros: {
-    'light': closeLight,
-    'dark': closeDark,
+    'light': closeDark,
+    'dark': closeLight,
   }
 };
 

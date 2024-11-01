@@ -14,16 +14,16 @@ import { NavLink } from "react-router-dom";
 
 const images = {
   apple: {
-    light: appleLight,
-    dark: appleDark
+    light: appleDark,
+    dark: appleLight,
   },
   google: {
-    light: googleLight,
-    dark: googleDark
+    light: googleDark,
+    dark: googleLight,
   },
   chevron: {
-    light: chevronLight,
-    dark: chevronDark
+    light: chevronDark,
+    dark: chevronLight,
   }
 };
 

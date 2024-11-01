@@ -5,8 +5,8 @@ import chevronLight from '../../../assets/icons/chevron-light.svg';
 import chevronDark from '../../../assets/icons/chevron-dark.svg';
 
 const chevrons = {
-  light: chevronDark,
-  dark: chevronLight,
+  light: chevronLight,
+  dark: chevronDark,
 };
 
 function FaqList() {
@@ -51,7 +51,7 @@ function FaqList() {
            
           
             <span className={`${open === item.id ? 'rotate' : ''}`} >
-              <img src={`${open === item.id ? chevrons.light : chevrons[theme]}`}/>
+              <img src={`${open === item.id ? chevrons.dark : chevrons[theme]}`}/>
             </span>
           </button>
           <div className={`answer ${open === item.id ? 'open' : ''}`} >
