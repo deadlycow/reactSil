@@ -3,11 +3,11 @@ import './Theme.css'
 import { useTheme } from './ThemeContext';
 
 const ThemeToggle = () => {
-  const { toggleTheme } = useTheme();
+  const {theme, toggleTheme } = useTheme();
 
   return (
     <label className='switch'>
-      <input type="checkbox" onChange={toggleTheme} />
+      <input type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
       <span className='slider round'></span>
     </label>
   );
