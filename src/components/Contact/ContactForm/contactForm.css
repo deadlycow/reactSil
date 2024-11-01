@@ -1,6 +1,7 @@
 .contact-form-container {
   display: grid;
   gap: 1rem;
+  position: relative;
 
   .contact-form-header{
     font-size: var(--H2);

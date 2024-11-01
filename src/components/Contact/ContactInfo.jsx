@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contactinfo.css';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import mail from '../../assets/icons/mail-icon-primary.svg';
 import add from '../../assets/icons/add-group-primary-icon.svg';
 import ContactForm from './ContactForm/ContactForm';
+import Success from './ContactForm/formsuccess/Success.jsx';
 
 function ContactInfo() {
+
+  const [sent, setSent] = useState(true);
+
+  function changeSent() {
+    setSent(false);
+  }
+  
   return (
     <div className='nav-padding wrapper'>
       <Breadcrumb />
@@ -34,6 +42,7 @@ function ContactInfo() {
         <div className="form-pop">
           <div className="pop">
             <ContactForm />
+            {sent ? (<Success action={changeSent}/>) : ''}
           </div>
         </div>
       </div>

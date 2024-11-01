@@ -25,7 +25,8 @@
   --color-success-12: #22c55e1f;
   --color-warning: #FFBA08;
   --color-info: #4C82F7;
-  --color-hover: #6365f1c3;  
+  --color-hover: #6365f1c3;
+  --color-hover-socials: #0000002f;   
 
   --bg-color-transparent: transparent;
 
@@ -71,6 +72,7 @@
   --bg-color-main: var(--color-gray-900);
   --bg-color-list: #191C27;
 
+  --color-hover-socials: var(--color-hover);
   --color-logos-hover: var(--color-white-4);
   --color-border-logos: var(--color-white-15);
   --color-border-faq: var(--color-white-15);

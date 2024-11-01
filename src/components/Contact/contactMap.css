@@ -2,6 +2,11 @@
   padding-block: 12.5rem 30.375rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 7rem;
+}
+
+.map {
+  grid-row: 1 / 4;
 }
 
 .center-info-header {
@@ -22,9 +27,10 @@ li.phone-icon::before,
 li.map-icon::before {
   content: '';
   background-size: contain;
+  background-repeat: no-repeat;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  aspect-ratio: 1;
   margin-right: 5px;
 }
 
@@ -46,12 +52,7 @@ li.map-icon::before {
   margin-left: 23px;
 }
 
-.ul-column {
-  flex-direction: column;
-  list-style: circle;
-}
-
-.test {
+.mini-container {
   display: flex;
   flex-direction: column;
   color: var(--color-font-p);
@@ -60,4 +61,23 @@ li.map-icon::before {
 .time-header {
   font-weight: var(--font-w-bold);
   color: var(--color-font-h1);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  place-self: end start;
+}
+
+.icon-box {
+  background-color: var(--bg-color-secondary);
+  height: 44px;
+  aspect-ratio: 1;
+  padding: .5rem;
+  border-radius: var(--border-r-6);
+  transition: background .2s ease;
+
+  &:hover {
+    background-color: var(--color-hover-socials);
+  }
 }
