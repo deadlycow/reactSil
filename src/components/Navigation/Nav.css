@@ -27,6 +27,12 @@
     gap: 1.5rem;
   }
 
+  .show-at {
+    @media (width > 1280px) {
+      display: none;
+    }
+  }
+
   @media (width < 1280px) {
     flex-direction: column;
     gap: 2rem;

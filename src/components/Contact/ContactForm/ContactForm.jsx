@@ -14,10 +14,11 @@ function ContactForm({ success }) {
   const validate = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const namePattern = /^[a-zA-ZÅÄÖåäö]+([ '-][a-zA-ZÅÄÖåäö]+)*$/;
+    const wordPattern = /^[a-zA-ZåäöÅÄÖ]+$/;
+
     let newErrors = { fullName: '', email: '', specialist: '' };
     let valid = true;
 
-    console.log(regform.fullName)
     if (!namePattern.test(regform.fullName)) {
       newErrors.fullName = 'Please provide a full name.';
       valid = false;
@@ -26,7 +27,8 @@ function ContactForm({ success }) {
       newErrors.email = 'Please provide a valid e-mail.';
       valid = false;
     }
-    if (!regform.specialist.trim()) {
+    console.log(regform.specialist);
+    if (regform.specialist === '' || !wordPattern.test(regform.specialist) ) {
       newErrors.specialist = 'Please select a specializasion.';
       valid = false;
     }
@@ -64,7 +66,6 @@ function ContactForm({ success }) {
       catch (error) {
         console.log(error.message);
       }
-
     }
   }
 
@@ -86,7 +87,7 @@ function ContactForm({ success }) {
           <label className='contact-form-label' htmlFor="specialist">Specialist</label>
           <label className={`error-label ${errors.specialist === '' ? '' : 'error'}`}>{errors.specialist}</label>
           <select id='specialist' name='specialist' className={`contact-form-input drop ${errors.specialist === '' ? '' : 'error'}`} type="drop-down" value={regform.specialist} onChange={handleChange}>
-            {regform.specialist === '' && <option value='' disabled>...</option>}
+            {regform.specialist === '' && <option value='' disabled>....</option>}
             <option value='Designer'>Designer</option>
             <option value='Developer'>Developer</option>
           </select>

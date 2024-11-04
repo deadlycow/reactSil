@@ -30,6 +30,7 @@ function Nav() {
         <Link to='/'><img className='img-logo' src={navImages[theme]} alt='Logo' /></Link>
         <div className={`link-list ${menuOpen ? 'open' : ''}`}>
           <div className="link-items">
+            <NavLink className='link show-at'>Sign in / up</NavLink>
             <NavLink onClick={toggleMenu} className='link' to='/'>Features</NavLink>
             <NavLink onClick={toggleMenu} className='link' to='/Contact'>Contact</NavLink>
           </div>

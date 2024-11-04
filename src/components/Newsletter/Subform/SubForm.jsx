@@ -22,7 +22,7 @@ function SubForm() {
       return;
     }
     setError(false);
-    setSuccess('Success!');
+    setSuccess('Subscribed!');
 
     try {
       const response = await fetch('https://win24-assignment.azurewebsites.net/api/forms/subscribe', {
@@ -50,7 +50,7 @@ function SubForm() {
     <form className='form-label-relative'>
       <div className={`${error ? 'error' : success ? 'success' : ''} input-container`}>
         <input placeholder='Your email' value={email} onChange={handleEmailChange} type="email" required />
-        <button type='submit' className='btn btn-sub' onClick={handleSubmit} >Subscribe</button>
+        <button type='submit' className='btn btn-sub' onClick={handleSubmit} >{success ? success : 'Subscribe'}</button>
       </div>
       <label className={`hover-label ${error ? 'error' : success ? 'success' : ''}`}>
         {error || success || ''}
