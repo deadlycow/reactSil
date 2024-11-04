@@ -16,8 +16,6 @@ function Clientsfeedback() {
         setUsers(data);
       } catch (err) {
         console.log(err.message);
-      } finally {
-        console.log('loading done');
       }
     };
 
@@ -26,8 +24,8 @@ function Clientsfeedback() {
 
   return (
     <div className='clients-container wrapper'>
-      <h2>Clients are <br/>Loving Our App</h2>
-      <Feedbackcards users={users}/>
+      <h2>Clients are <br />Loving Our App</h2>
+      <Feedbackcards users={users} />
     </div>
   );
 };

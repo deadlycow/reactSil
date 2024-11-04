@@ -8,10 +8,10 @@ import Success from './ContactForm/formsuccess/Success.jsx';
 
 function ContactInfo() {
 
-  const [sent, setSent] = useState(true);
+  const [sent, setSent] = useState(false);
 
-  function changeSent() {
-    setSent(false);
+  function changeSent(value) {
+    setSent(value);
   }
   
   return (
@@ -41,8 +41,8 @@ function ContactInfo() {
         </div>
         <div className="form-pop">
           <div className="pop">
-            <ContactForm />
-            {sent ? (<Success action={changeSent}/>) : ''}
+            <ContactForm success={changeSent} />
+            {sent ? (<Success action={() => changeSent(false)}/>) : ''}
           </div>
         </div>
       </div>

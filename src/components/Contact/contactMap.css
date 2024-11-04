@@ -3,10 +3,36 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 7rem;
+
+  @media (width < 1280px) {
+    row-gap: 3rem;
+    padding-block: 5rem 15rem;
+  }
+
+  @media (width < 768px) {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
 
 .map {
   grid-row: 1 / 4;
+
+  @media (width < 1280px) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  @media (width < 768px) {
+    grid-row: 3;
+  }
+}
+
+.center-info {
+  @media (width < 768px) {
+    width: 280px;
+    text-align: center;
+  }
 }
 
 .center-info-header {
@@ -20,6 +46,7 @@
 .center-unorder-list {
   flex-direction: column;
   gap: .75rem;
+  text-align: left;
 }
 
 li.time-icon::before,
@@ -67,6 +94,11 @@ li.map-icon::before {
   display: flex;
   gap: 1rem;
   place-self: end start;
+
+  @media (width < 1280px) {
+    grid-column: 1 / -1;
+    place-self: center;
+  }
 }
 
 .icon-box {

@@ -1,9 +1,17 @@
+.form-label-relative {
+  position: relative;
+}
+.hover-label {
+  position: absolute;
+  left: 0;
+  bottom: -1.6rem;
+}
+
 .input-container {
   display: flex;
   position: relative;
   width: 100%;
   border-radius: var(--border-r-8);
-  /* border: 1px solid var(--color-border-input); */
 }
 
 input {

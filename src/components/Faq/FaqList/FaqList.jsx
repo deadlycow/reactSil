@@ -26,9 +26,6 @@ function FaqList() {
       catch (err) {
         console.log(err.message);
       }
-      finally {
-        console.log('Klar');
-      }
     }
 
     fetchData();
@@ -48,10 +45,10 @@ function FaqList() {
         <div className={`bg-question ${open === item.id ? 'active' : ''}`} key={item.id}>
           <button className='question' onClick={() => toggleAnswer(item.id)}>
             <h3>{item.title}</h3>
-           
-          
+
+
             <span className={`${open === item.id ? 'rotate' : ''}`} >
-              <img src={`${open === item.id ? chevrons.dark : chevrons[theme]}`}/>
+              <img src={`${open === item.id ? chevrons.dark : chevrons[theme]}`} />
             </span>
           </button>
           <div className={`answer ${open === item.id ? 'open' : ''}`} >

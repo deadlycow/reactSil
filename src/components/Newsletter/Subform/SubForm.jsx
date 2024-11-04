@@ -46,14 +46,13 @@ function SubForm() {
     }
   };
 
-
   return (
-    <form>
+    <form className='form-label-relative'>
       <div className={`${error ? 'error' : success ? 'success' : ''} input-container`}>
         <input placeholder='Your email' value={email} onChange={handleEmailChange} type="email" required />
         <button type='submit' className='btn btn-sub' onClick={handleSubmit} >Subscribe</button>
       </div>
-      <label className={error ? 'error' : success ? 'success' : ''}>
+      <label className={`hover-label ${error ? 'error' : success ? 'success' : ''}`}>
         {error || success || ''}
       </label>
     </form>
