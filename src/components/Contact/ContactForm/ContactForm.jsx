@@ -13,7 +13,7 @@ function ContactForm({ success }) {
 
   const validate = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const namePattern = /^[a-zA-ZÅÄÖåäö]+([ '-][a-zA-ZÅÄÖåäö]+)*$/;
+    const namePattern = /^[\p{L}]+(?:[\s'-][\p{L}]+)*$/u;
     const wordPattern = /^[a-zA-ZåäöÅÄÖ]+$/;
 
     let newErrors = { fullName: '', email: '', specialist: '' };
