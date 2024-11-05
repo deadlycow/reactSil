@@ -16,7 +16,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/reactSil/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </main>
