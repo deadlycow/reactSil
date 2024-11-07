@@ -10,7 +10,7 @@ function Breadcrumb() {
 
   return (
     <ul>
-      <li><Link to='/'>Homepage</Link></li>
+      <li><Link to='/reactSil/'>Homepage</Link></li>
       {
         pathnames.map((item, index) => {
           const to = `/${pathnames.slice(0, index + 1).join('/')}`;
