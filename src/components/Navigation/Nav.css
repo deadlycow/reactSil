@@ -17,6 +17,7 @@
 
   &:hover {
     text-decoration: underline;
+    background-color: var(--color-btn-hover);
   }
 }
 
@@ -25,6 +26,8 @@
   .link-items {
     display: flex;
     gap: 1.5rem;
+    border-bottom-left-radius: var(--border-r-6);
+    border-bottom-right-radius: var(--border-r-6);
   }
 
   .show-at {
@@ -58,7 +61,6 @@
     .link {
       font-size: var(--font-24);
       padding: 1rem;
-      
     }
   }
 }

@@ -16,6 +16,7 @@ function Breadcrumb() {
           const to = `/${pathnames.slice(0, index + 1).join('/')}`;
 
           if (item === 'reactSil') return null
+          
           return (
             <li key={to}>
               { 
