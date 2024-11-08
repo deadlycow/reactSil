@@ -75,7 +75,7 @@ label.error {
   content: '';
   background-size: contain;
   position: absolute;
-  right: 125px;
+  right: 135px;
   top: 50%;
   transform: translateY(-50%);
   width: 25px;

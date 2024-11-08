@@ -27,7 +27,7 @@ function ContactForm({ success }) {
       newErrors.email = 'Please provide a valid e-mail.';
       valid = false;
     }
-    console.log(regform.specialist);
+    // console.log(regform.specialist);
     if (regform.specialist === '' || !wordPattern.test(regform.specialist) ) {
       newErrors.specialist = 'Please select a specializasion.';
       valid = false;

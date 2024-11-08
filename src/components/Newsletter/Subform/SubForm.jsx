@@ -22,7 +22,6 @@ function SubForm() {
       return;
     }
     setError(false);
-    setSuccess('Subscribed!');
 
     try {
       const response = await fetch('https://win24-assignment.azurewebsites.net/api/forms/subscribe', {
@@ -38,6 +37,7 @@ function SubForm() {
       }
       else {
         console.log(response.status);
+        setSuccess('Subscribed!');
       }
       setEmail('');
 
