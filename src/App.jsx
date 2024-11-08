@@ -16,8 +16,8 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/reactSil/' element={<Home />} />
+          <Route path='/reactSil/contact' element={<Contact />} />
         </Routes>
       </main>
       <Footer />

@@ -63,7 +63,7 @@ function RoundMoreBtn({ theme }) {
 
 function ContactUs({ color }) {
   return (
-    <Link to='/Contact' className={`btn btn-contact-us btn-${color}`}>
+    <Link to='/reactSil/contact' className={`btn btn-contact-us btn-${color}`}>
       Contact us
       <img src={arrows[color]} />
     </Link>
@@ -72,7 +72,7 @@ function ContactUs({ color }) {
 
 function ContactUsNow() {
   return (
-    <NavLink to='/Contact' className="btn btn-contact-us-now">
+    <NavLink to='/reactSil/contact' className="btn btn-contact-us-now">
       Contact us now
     </NavLink>
   )

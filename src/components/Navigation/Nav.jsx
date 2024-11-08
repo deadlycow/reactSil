@@ -27,12 +27,12 @@ function Nav() {
   return (
     <div className='main-nav wrapper'>
       <div className='flex-center gap-3'>
-        <Link to='/'><img className='img-logo' src={navImages[theme]} alt='Logo' /></Link>
+        <Link to='/reactSil/'><img className='img-logo' src={navImages[theme]} alt='Logo' /></Link>
         <div className={`link-list ${menuOpen ? 'open' : ''}`}>
           <div className="link-items">
             <NavLink className='link show-at'>Sign in / up</NavLink>
-            <NavLink onClick={toggleMenu} className='link' to='/'>Features</NavLink>
-            <NavLink onClick={toggleMenu} className='link' to='/Contact'>Contact</NavLink>
+            <NavLink onClick={toggleMenu} className='link' to='/reactSil/'>Features</NavLink>
+            <NavLink onClick={toggleMenu} className='link' to='/reactSil/contact'>Contact</NavLink>
           </div>
         </div>
       </div>
